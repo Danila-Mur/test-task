@@ -1,0 +1,112 @@
+.offer {
+  padding: 230px 0 200px;
+  background-image: url('/img/header_bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.offer__title {
+  max-width: 1070px;
+  margin-bottom: 40px;
+  color: #272733;
+  font-family: var(--font-bold);
+  font-size: 48px;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+.offer__title--blue {
+  color: var(--color-blue);
+}
+.offer__list {
+  margin-bottom: 60px;
+  font-family: var(--font-bold);
+  font-size: 20px;
+  line-height: 2;
+}
+.offer__list-item {
+  list-style: none;
+  font-family: var(--font-main);
+}
+.offer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.offer__link {
+  padding: 16px 57px;
+  font-family: var(--font-main);
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease-out;
+}
+.offer__link--order {
+  margin-right: 27px;
+  border: 1px var(--color-white) solid;
+  border-radius: 4px;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+}
+.offer__link--order:hover {
+  color: var(--text-color);
+  border-color: var(--text-color);
+  background-color: transparent;
+}
+.offer__link--details {
+  border: 1px #6f6d7b solid;
+  border-radius: 4px;
+  color: #6f6d7b;
+  background-color: transparent;
+}
+.offer__link--details:hover {
+  border: 1px var(--color-white) solid;
+  color: var(--color-white);
+  background-color: var(--color-blue);
+}
+@media screen and (max-width: 1700px) {
+  .offer {
+    background-position-x: 60%;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .offer {
+    background-position-x: 70%;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .offer {
+    background-position-x: 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .offer {
+    background-position-x: 0%;
+  }
+}
+@media screen and (max-width: 490px) {
+  .offer {
+    padding: 150px 0 50px;
+  }
+  .offer__links {
+    flex-direction: column;
+  }
+  .offer__link {
+    padding: 16px;
+    text-align: center;
+  }
+  .offer__link--order {
+    width: 200px;
+    margin: 0 auto 30px auto;
+  }
+  .offer__link--details {
+    width: 200px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 390px) {
+  .offer__title {
+    font-size: 32px;
+  }
+  .offer__list {
+    font-size: 18px;
+  }
+}

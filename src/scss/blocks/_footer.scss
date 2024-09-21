@@ -1,0 +1,113 @@
+.footer {
+  padding: 35px 0;
+  color: var(--color-white);
+  background-color: var(--bg-gray);
+  font-family: var(--font-main);
+  font-size: 13px;
+}
+.footer__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.footer__payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 42px;
+  margin-left: 60px;
+  padding-left: 44px;
+  padding-right: 52px;
+  border-right: 1px solid #c3c3c3;
+  border-left: 1px solid #c3c3c3;
+}
+.footer__pay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 45px;
+  color: var(--color-gray);
+  text-decoration: none;
+  &:last-child {
+    margin-right: 0;
+  }
+  img {
+    margin-right: 10px;
+  }
+}
+.footer__mail {
+  margin-right: 40px;
+  text-decoration: none;
+  color: var(--color-white);
+  img {
+    margin-right: 10px;
+  }
+}
+.footer__social {
+  text-decoration: none;
+  color: var(--color-white);
+  img {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .footer__payment {
+    margin-right: 0;
+    margin-left: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .footer__mail {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .footer__payment {
+    padding: 0 10px;
+  }
+  .footer__pay {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .footer__wrap {
+    flex-direction: column-reverse;
+  }
+  .footer__social {
+    margin-bottom: 20px;
+  }
+  .footer__mail {
+    margin-bottom: 20px;
+  }
+  .footer__payment {
+    margin-bottom: 20px;
+  }
+  .footer__justice {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .footer__payment {
+    flex-direction: column;
+    border: none;
+  }
+  .footer__pay {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .footer__justice {
+    text-align: center;
+  }
+}

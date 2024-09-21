@@ -1,0 +1,133 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 40px 0;
+  background-color: var(--bg-black);
+}
+.header__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.header__logo {
+  color: var(--color-white);
+  font-family: var(--font-black);
+  font-size: 28px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header__logo--blue {
+  color: var(--color-blue);
+}
+.header__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.header__nav-item {
+  list-style: none;
+}
+.header__nav-link {
+  color: var(--color-white);
+  font-family: var(--font-bold);
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  &:hover {
+    color: var(--color-blue);
+  }
+}
+.header__burger {
+  display: none;
+  width: 40px;
+  height: 28px;
+}
+.burger__line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--page-bg);
+}
+@media screen and (max-width: 800px) {
+  .header__nav-list {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .header__burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .header__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 75px;
+    transform: translateX(100%);
+    background-color: var(--bg-black);
+    transition: 0.2s all linear;
+  }
+  .header-nav__visit {
+    transform: translateX(0);
+  }
+  .header__nav-link {
+    width: 100%;
+    margin-right: 0;
+    font-size: 24px;
+    line-height: 2;
+  }
+  .header__nav-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 11;
+    width: 40px;
+    height: 40px;
+  }
+  .header__nav-close-line {
+    position: absolute;
+    top: 50%;
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: var(--page-bg);
+    &:first-child {
+      transform: translateY(-50%) rotate(45deg);
+    }
+    &:last-child {
+      transform: translateY(-50%) rotate(-45deg);
+    }
+  }
+}
+@media screen and (max-width: 490px) {
+  .header__logo {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .header__logo {
+    font-size: 18px;
+  }
+  .header__nav-link {
+    font-size: 14px;
+  }
+}
